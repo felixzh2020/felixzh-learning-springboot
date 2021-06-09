@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/static-cron-schedule-single-thread/pom.xml" />
         <option value="$PROJECT_DIR$/static-cron-schedule-multi-thread/pom.xml" />
         <option value="$PROJECT_DIR$/dynamic-cron-schedule-single-thread/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-cron-schedule-multi-thread/pom.xml" />
       </list>
     </option>
   </component>

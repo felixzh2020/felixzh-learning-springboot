@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dynamic-cron-schedule-multi-thread/dynamic-cron-schedule-multi-thread.iml" filepath="$PROJECT_DIR$/dynamic-cron-schedule-multi-thread/dynamic-cron-schedule-multi-thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/dynamic-cron-schedule-single-thread/dynamic-cron-schedule-single-thread.iml" filepath="$PROJECT_DIR$/dynamic-cron-schedule-single-thread/dynamic-cron-schedule-single-thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/felixzh-learning-springboot.iml" filepath="$PROJECT_DIR$/.idea/felixzh-learning-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/static-cron-schedule-multi-thread/static-cron-schedule-multi-thread.iml" filepath="$PROJECT_DIR$/static-cron-schedule-multi-thread/static-cron-schedule-multi-thread.iml" />
