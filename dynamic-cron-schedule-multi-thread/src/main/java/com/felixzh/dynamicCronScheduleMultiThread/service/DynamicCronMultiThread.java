@@ -39,7 +39,7 @@ public class DynamicCronMultiThread implements SchedulingConfigurer {
         taskRegistrar.setScheduler(taskScheduler());
 
         taskRegistrar.addTriggerTask(() -> {
-            log.info(Thread.currentThread().getName() + " 定时任务处理逻辑：" + new Date());
+            log.info(Thread.currentThread().getName() + " 定时任务 1 处理逻辑：" + new Date());
             //模拟业务耗时
             try {
                 Thread.sleep(3000);
@@ -51,6 +51,14 @@ public class DynamicCronMultiThread implements SchedulingConfigurer {
             CronTrigger cronTrigger = new CronTrigger(cronExpression);
             return cronTrigger.nextExecutionTime(triggerContext);
         });
+
+        taskRegistrar.addTriggerTask(() -> {
+            log.info(Thread.currentThread().getName() + " 定时任务 2 处理逻辑：" + new Date());
+        }, (triggerContext) -> {
+            CronTrigger cronTrigger = new CronTrigger(cronExpression);
+            return cronTrigger.nextExecutionTime(triggerContext);
+        });
+
     }
 
     //启用多线程
@@ -58,4 +66,13 @@ public class DynamicCronMultiThread implements SchedulingConfigurer {
     public ScheduledExecutorService taskScheduler() {
         return Executors.newScheduledThreadPool(5);
     }
+
+/*    @Bean(value = "taskScheduler")
+    public TaskScheduler taskScheduler(){
+        ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
+        taskScheduler.setPoolSize(10);
+        taskScheduler.setThreadNamePrefix("felixzh-");
+        taskScheduler.initialize();
+        return taskScheduler;
+    }*/
 }
