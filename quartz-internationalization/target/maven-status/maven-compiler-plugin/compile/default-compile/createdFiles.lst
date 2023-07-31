@@ -1,0 +1,9 @@
+com\felixzh\engine\entity\TaskInfoEntity.class
+com\felixzh\engine\model\APITaskRecord.class
+com\felixzh\engine\service\ITaskService.class
+com\felixzh\engine\controller\TaskController.class
+com\felixzh\engine\entity\TaskRecordEntity.class
+com\felixzh\engine\model\APITaskInfo.class
+com\felixzh\engine\service\impl\TaskServiceImpl.class
+com\felixzh\engine\entity\BaseEntity.class
+com\felixzh\engine\QuartzEngineApp.class
